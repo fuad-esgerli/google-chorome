@@ -1,0 +1,127 @@
+:root {
+    --google-btn-reng:#f8f9fa;
+}
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    position: relative;
+} 
+
+a::after{
+    position: absolute;
+    content: "";
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+a:hover::after {
+    width: 100%;
+}
+img {
+    height: 24px;
+    width: 24px;
+} 
+.logo-section img {
+width: 272px;
+height: 92px;
+} 
+ .container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+ }  
+ nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 10%;
+    align-items: center;
+    gap: 10px;
+ } 
+  nav button {
+    margin-right: 10px;
+    font-size: 20px;
+    background-color: #0000ff;
+    color: #fff;
+ }
+
+ section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     gap: 10px;
+ } 
+ section {
+    flex: 1;
+ }
+ section button {
+    background: var(--google-btn-reng);
+    border: 1px solid transparent;
+    width: 144px;
+    height: 36px;
+ }
+ .buttons-groups {
+    display: flex;
+    gap: 10px;
+ }
+ .search-section {
+    min-width: 582px;
+    position: relative;
+    height: 44px;
+ }
+ .search-section input {
+    width: 100%;
+     height: 100%; 
+    border-radius: 25px;
+    border: 1px solid #dedede;
+    padding: 0 45px;
+ }
+ .search-section input:hover {
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+ }
+ .s-icon {
+    position: absolute;
+    top: 26%;
+    left: 3%;
+    opacity: .4;
+ }
+ .vs-icon {
+    position: absolute;
+    top: 26%;
+    right: 3%;
+ } 
+ section a {
+    color: #1a0dab;
+ }
+ footer {
+    background-color: #F2F2F2;
+    flex-basis: 10%;
+    font-size: 20px;
+ } 
+.links
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+@media(max-width:800px) {
+    .search-section {
+        min-width: 630px;
+    }
+    .search-section input {
+        width: 100%;
+    }
+}
